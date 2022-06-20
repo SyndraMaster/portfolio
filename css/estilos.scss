@@ -1,6 +1,88 @@
 // variables
 $fuentePrincipal: 'Fira Sans', sans-serif;
+$colorPrincipal: #c20016;
 $titulos: 'Koulen', cursive;
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-family: $fuentePrincipal;
+}
+header {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(192, 192, 192);
+}
+.brand {
+    font-family: $titulos;
+    font-size: 1.4rem;
+    color: $colorPrincipal;
+}
+nav {
+    font-family: $fuentePrincipal;
+    a {
+        color: rgb(68, 68, 68);
+        font-weight: bold;
+        margin: 10px;
+    }
+}
+.banner {
+    width: 100%;
+    display: flex;
+    padding: 50px 150px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #000;
+}
+.imagen-banner {
+    height: 500px;
+    width: 500px;
+    backdrop-filter: blur(10px);
+    background-color: #c20016;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
+    border-radius: 10px;
+}
+.titulo{
+    width: 500px;
+    p {
+        font-size: 1.1rem;
+        color: rgb(153, 153, 153);
+        a {
+            color: #c20016;
+        }
+    }
+}
+h1 {
+    color: #c20016;
+    font-family: $titulos;
+    font-size: 3rem;
+}
+h2 {
+    font-family: $fuentePrincipal;
+    margin-bottom: 20px;
+    color:#fff;
+}
+h3 {
+    font-family: $fuentePrincipal;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    color: #c20016;
+}
+.container {
+    padding: 0 150px;
+}
+.conocimientos-resumen {
+    width: 800px;
+    margin: auto;
+}
+.tec-resumen {
+    
 }
