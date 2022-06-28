@@ -79,10 +79,36 @@ h3 {
 .container {
     padding: 0 150px;
 }
+.conocimientos {
+    background-color: rgb(20, 20, 20);
+    padding-bottom: 30px;
+    .container {
+        display: flex;
+    }
+}
 .conocimientos-resumen {
     width: 800px;
     margin: auto;
+    font-weight: bold;
+    color: #fff;
+    width: 450px;
 }
 .tec-resumen {
-    
+    display: flex;
+    width: 450px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #2e0005a9);
+    img {
+        width: 80px;
+        margin: 17px;
+    }
+}
+#logo {
+    fill: $colorPrincipal;
+}
+.proyectos {
+    background: linear-gradient(to left, rgb(31, 31, 31), #3d0b11)
 }
