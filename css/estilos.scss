@@ -146,3 +146,23 @@ h4 {
     display: flex;
     align-items: center;
 }
+.contacto {
+    height: 20px;
+    width: 100%;
+    background-color: $colorPrincipal;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    img {
+        width: 20px;
+    }
+}
+.datos {
+    background-color: $colorPrincipal;
+}
+.redes {
+    display: flex;
+}
+h5 {
+    width: 100%;
+}

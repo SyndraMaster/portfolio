@@ -210,4 +210,36 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.contacto {
+  height: 20px;
+  width: 100%;
+  background-color: #c20016;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contacto img {
+  width: 20px;
+}
+
+.datos {
+  background-color: #c20016;
+}
+
+.redes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h5 {
+  width: 100%;
+}
 /*# sourceMappingURL=estilos.css.map */
