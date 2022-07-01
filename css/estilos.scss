@@ -89,14 +89,14 @@ h4 {
     padding-bottom: 30px;
     .container {
         display: flex;
+        justify-content: space-between;
+        align-items: center;
     }
 }
 .conocimientos-resumen {
-    width: 800px;
-    margin: auto;
     font-weight: bold;
     color: #fff;
-    width: 450px;
+    width: 500px;
 }
 .tec-resumen {
     display: flex;
@@ -146,15 +146,16 @@ h4 {
     display: flex;
     align-items: center;
 }
-.contacto {
-    height: 20px;
+footer {
+    // height: 70px;
     width: 100%;
+    padding: 30px;
     background-color: $colorPrincipal;
     display: flex;
     align-items: center;
     justify-content: space-around;
     img {
-        width: 20px;
+        width: 30px;
     }
 }
 .datos {
@@ -162,7 +163,27 @@ h4 {
 }
 .redes {
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
 }
 h5 {
+    font-family: $fuentePrincipal;
+    font-size: 1.3rem;
     width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+.correo {
+    a {
+        font-family: $fuentePrincipal;
+        display: flex;
+        font-size: 1.5rem;
+        color: #000;
+        font-weight: bold;
+        img {
+        padding-right: 10px;
+        width: 40px;
+        }
+    }
 }

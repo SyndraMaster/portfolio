@@ -121,14 +121,18 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .conocimientos-resumen {
-  width: 800px;
-  margin: auto;
   font-weight: bold;
   color: #fff;
-  width: 450px;
+  width: 500px;
 }
 
 .tec-resumen {
@@ -211,9 +215,9 @@ h4 {
           align-items: center;
 }
 
-.contacto {
-  height: 20px;
+footer {
   width: 100%;
+  padding: 30px;
   background-color: #c20016;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -225,8 +229,8 @@ h4 {
       justify-content: space-around;
 }
 
-.contacto img {
-  width: 20px;
+footer img {
+  width: 30px;
 }
 
 .datos {
@@ -237,9 +241,38 @@ h4 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 h5 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.3rem;
   width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.correo a {
+  font-family: "Fira Sans", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5rem;
+  color: #000;
+  font-weight: bold;
+}
+
+.correo a img {
+  padding-right: 10px;
+  width: 40px;
 }
 /*# sourceMappingURL=estilos.css.map */
