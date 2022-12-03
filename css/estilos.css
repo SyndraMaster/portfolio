@@ -13,6 +13,45 @@ p {
   font-family: "Fira Sans", sans-serif;
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1000px;
+  }
+  .container .imagen-banner {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+  }
+  .container .titulo {
+    margin-bottom: 30px;
+  }
+  .container .imagen-banner {
+    width: 300px;
+    height: 300px;
+  }
+}
+
 header {
   padding: 0 150px;
   display: -webkit-box;
@@ -25,6 +64,18 @@ header {
       -ms-flex-align: center;
           align-items: center;
   background-color: silver;
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 0 20px;
+  }
 }
 
 .brand {
@@ -45,17 +96,19 @@ nav a {
 
 .banner {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 50px 150px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #000;
+}
+
+.banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .imagen-banner {
@@ -108,25 +161,53 @@ h4 {
   padding: 15px;
 }
 
-.container {
-  padding: 0 150px;
-}
-
 .conocimientos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   background-color: #141414;
-  padding-bottom: 30px;
 }
 
 .conocimientos .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+}
+
+.conocimientos .container-conocimientos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media (max-width: 1100px) {
+  .conocimientos .container-conocimientos {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+  }
+  .conocimientos .container-conocimientos .conocimientos-resumen {
+    margin-bottom: 30px;
+  }
 }
 
 .conocimientos-resumen {
