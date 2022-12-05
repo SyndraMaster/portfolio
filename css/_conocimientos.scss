@@ -1,0 +1,42 @@
+.conocimientos {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    background-color: $luces;
+    .container {
+        flex-flow: column nowrap;
+    }
+    .container-conocimientos {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+        @media (max-width: 1100px) {
+            flex-flow: column;
+            .conocimientos-resumen{
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+.conocimientos-resumen {
+    font-weight: bold;
+    color: $dark;
+    width: 500px;
+}
+.tec-resumen {
+    display: flex;
+    width: 450px;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 5px;
+    border-radius: 10px;
+    background: linear-gradient(to bottom, $dark, $colorPrincipal);
+    img {
+        width: 80px;
+        margin: 17px;
+    }
+}
+#logo {
+    fill: $luces;
+}

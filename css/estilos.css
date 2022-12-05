@@ -351,13 +351,10 @@ header nav a {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background-color: #141414;
+  background-color: #F2F2EB;
 }
 
 .conocimientos .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-flow: column nowrap;
@@ -391,7 +388,7 @@ header nav a {
 
 .conocimientos-resumen {
   font-weight: bold;
-  color: #fff;
+  color: #1A2130;
   width: 500px;
 }
 
@@ -408,8 +405,8 @@ header nav a {
       justify-content: space-around;
   padding: 5px;
   border-radius: 10px;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0)), to(#2e0005a9));
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), #2e0005a9);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1A2130), to(#c20016));
+  background: linear-gradient(to bottom, #1A2130, #c20016);
 }
 
 .tec-resumen img {
@@ -418,7 +415,7 @@ header nav a {
 }
 
 #logo {
-  fill: #c20016;
+  fill: #F2F2EB;
 }
 
 .proyectos {
