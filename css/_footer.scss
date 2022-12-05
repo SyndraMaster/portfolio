@@ -1,0 +1,29 @@
+footer {
+    // height: 70px;
+    width: 100%;
+    height: 100px;
+    padding: 20px;
+    background-color: $colorPrincipal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.redes {
+    img {
+        width: 30px;
+    }
+}
+.correo {
+    a {
+        font-family: $fuentePrincipal;
+        display: flex;
+        align-items: center;
+        font-size: 1.5rem;
+        color: $luces;
+        font-weight: bold;
+        img {
+        padding-right: 10px;
+        width: 40px;
+        }
+    }
+}

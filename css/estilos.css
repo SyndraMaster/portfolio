@@ -236,14 +236,6 @@ h2, p, h4 {
   font-family: "Fira Sans", sans-serif;
 }
 
-h3 {
-  text-align: center;
-  margin: 0;
-  font-size: 1.5rem;
-  padding: 50px;
-  color: #c20016;
-}
-
 h1 {
   color: #c20016;
   font-size: 3rem;
@@ -255,7 +247,25 @@ h2 {
   color: #F2F2EB;
 }
 
+h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 50px;
+  color: #c20016;
+}
+
 h4 {
+  color: #F2F2EB;
+}
+
+h5 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.3rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+  margin: 0;
   color: #F2F2EB;
 }
 
@@ -462,48 +472,21 @@ header nav a {
 
 footer {
   width: 100%;
-  padding: 30px;
+  height: 100px;
+  padding: 20px;
   background-color: #c20016;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-}
-
-footer img {
-  width: 30px;
-}
-
-.datos {
-  background-color: #c20016;
-}
-
-.redes {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
-h5 {
-  font-family: "Fira Sans", sans-serif;
-  font-size: 1.3rem;
-  width: 100%;
-  text-align: center;
-  margin-bottom: 10px;
+.redes img {
+  width: 30px;
 }
 
 .correo a {
@@ -511,8 +494,11 @@ h5 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-size: 1.5rem;
-  color: #000;
+  color: #F2F2EB;
   font-weight: bold;
 }
 

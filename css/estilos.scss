@@ -5,51 +5,5 @@
 @import 'conocimientos';
 @import 'proyectos';
 @import 'componentes/cards';
-
-
-
-
-
-
-footer {
-    // height: 70px;
-    width: 100%;
-    padding: 30px;
-    background-color: $colorPrincipal;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    img {
-        width: 30px;
-    }
-}
-.datos {
-    background-color: $colorPrincipal;
-}
-.redes {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-}
-h5 {
-    font-family: $fuentePrincipal;
-    font-size: 1.3rem;
-    width: 100%;
-    text-align: center;
-    margin-bottom: 10px;
-}
-.correo {
-    a {
-        font-family: $fuentePrincipal;
-        display: flex;
-        font-size: 1.5rem;
-        color: #000;
-        font-weight: bold;
-        img {
-        padding-right: 10px;
-        width: 40px;
-        }
-    }
-}
+@import 'footer';
 @import 'queries';
