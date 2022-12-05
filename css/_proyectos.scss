@@ -1,0 +1,14 @@
+.proyectos {
+    background-color: $dark;
+    padding-bottom: 30px;
+    .container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.proyecto-texto {
+    height: 76px;
+    display: flex;
+    align-items: center;
+}
