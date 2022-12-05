@@ -1,0 +1,27 @@
+.banner {
+    width: 100%;
+    justify-content: space-between;
+    background-color: $dark;
+    .container {
+        padding-top: 50px;
+    }
+}
+.titulo{
+    width: 500px;
+    p {
+        font-size: 1.1rem;
+        color: $luces;
+        a {
+            color: $acento-dark;
+            font-weight: bold;
+        }
+    }
+}
+.imagen-banner {
+    height: 500px;
+    width: 500px;
+    backdrop-filter: blur(10px);
+    background-color: $acento-dark;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
+    border-radius: 10px;
+}

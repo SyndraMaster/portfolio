@@ -1,16 +1,225 @@
-* {
+div, footer, h3 {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 a {
   text-decoration: none;
 }
 
-p {
-  font-family: "Fira Sans", sans-serif;
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+main {
+  display: block;
+}
+
+/**
+  * Correct the font size and margin on `h1` elements within `section` and
+  * `article` contexts in Chrome, Firefox, and Safari.
+  */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+    ========================================================================== */
+/**
+  * 1. Add the correct box sizing in Firefox.
+  * 2. Show the overflow in Edge and IE.
+  */
+hr {
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+a {
+  background-color: transparent;
+}
+
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  /* 2 */
+}
+
+b,
+strong {
+  font-weight: bolder;
+}
+
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+small {
+  font-size: 80%;
+}
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+img {
+  border-style: none;
+}
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+button,
+[type="button"],
+[type="reset"],
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+legend {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+progress {
+  vertical-align: baseline;
+}
+
+textarea {
+  overflow: auto;
+}
+
+[type="checkbox"],
+[type="radio"] {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+[type="search"] {
+  outline-offset: -2px;
+  /* 2 */
+}
+
+::-webkit-file-upload-button {
+  font: inherit;
+  /* 2 */
+}
+
+details {
+  display: block;
+}
+
+summary {
+  display: list-item;
+}
+
+template {
+  display: none;
+}
+
+[hidden] {
+  display: none;
 }
 
 .container {
@@ -22,38 +231,50 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 50px 0;
+  padding-bottom: 50px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@media (max-width: 1400px) {
-  .container {
-    width: 1000px;
-  }
-  .container .imagen-banner {
-    width: 400px;
-    height: 400px;
-  }
+a {
+  text-decoration: none;
 }
 
-@media (max-width: 1100px) {
-  .container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-flow: column nowrap;
-            flex-flow: column nowrap;
-    width: 100%;
-  }
-  .container .titulo {
-    margin-bottom: 30px;
-  }
-  .container .imagen-banner {
-    width: 300px;
-    height: 300px;
-  }
+h1, h3 {
+  font-family: "Koulen", cursive;
+}
+
+h2, p, h4 {
+  font-family: "Fira Sans", sans-serif;
+}
+
+h3 {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  padding: 50px;
+  color: #c20016;
+}
+
+h1 {
+  color: #c20016;
+  font-size: 3rem;
+}
+
+h2 {
+  font-family: "Fira Sans", sans-serif;
+  margin-bottom: 20px;
+  color: #F2F2EB;
+}
+
+h4 {
+  color: #F2F2EB;
+  padding: 15px;
 }
 
 header {
-  padding: 0 150px;
+  padding: 10px 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -63,33 +284,21 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: silver;
+  background-color: #F2F2EB;
 }
 
-@media (max-width: 1200px) {
-  header {
-    padding: 0 50px;
-  }
-}
-
-@media (max-width: 900px) {
-  header {
-    padding: 0 20px;
-  }
-}
-
-.brand {
+header .brand {
   font-family: "Koulen", cursive;
   font-size: 1.4rem;
   color: #c20016;
 }
 
-nav {
+header nav {
   font-family: "Fira Sans", sans-serif;
 }
 
-nav a {
-  color: #444444;
+header nav a {
+  color: #1A2130;
   font-weight: bold;
   margin: 10px;
 }
@@ -99,27 +308,11 @@ nav a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #000;
+  background-color: #1A2130;
 }
 
 .banner .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.imagen-banner {
-  height: 500px;
-  width: 500px;
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  background-color: #c20016;
-  -webkit-box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
-          box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
-  border-radius: 10px;
+  padding-top: 50px;
 }
 
 .titulo {
@@ -128,37 +321,23 @@ nav a {
 
 .titulo p {
   font-size: 1.1rem;
-  color: #999999;
+  color: #F2F2EB;
 }
 
 .titulo p a {
-  color: #c20016;
+  color: #B3885C;
+  font-weight: bold;
 }
 
-h1 {
-  color: #c20016;
-  font-family: "Koulen", cursive;
-  font-size: 3rem;
-}
-
-h2 {
-  font-family: "Fira Sans", sans-serif;
-  margin-bottom: 20px;
-  color: #fff;
-}
-
-h3 {
-  font-family: "Fira Sans", sans-serif;
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 20px;
-  color: #c20016;
-}
-
-h4 {
-  font-family: "Fira Sans", sans-serif;
-  color: silver;
-  padding: 15px;
+.imagen-banner {
+  height: 500px;
+  width: 500px;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  background-color: #B3885C;
+  -webkit-box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
+          box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
+  border-radius: 10px;
 }
 
 .conocimientos {
@@ -355,5 +534,44 @@ h5 {
 .correo a img {
   padding-right: 10px;
   width: 40px;
+}
+
+@media (max-width: 1400px) {
+  .container {
+    width: 1000px;
+  }
+  .imagen-banner {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    width: 100%;
+  }
+  .titulo {
+    margin-bottom: 30px;
+  }
+  .imagen-banner {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  header {
+    padding: 5px 50px;
+  }
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 5px 20px;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */

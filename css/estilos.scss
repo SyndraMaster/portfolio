@@ -1,120 +1,9 @@
-// variables
-$fuentePrincipal: 'Fira Sans', sans-serif;
-$colorPrincipal: #c20016;
-$titulos: 'Koulen', cursive;
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-}
-p {
-    font-family: $fuentePrincipal;
-}
-///////////////////////////////////////////////////
-.container {
-    width: 1200px;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 50px 0;
-    @media (max-width: 1400px) {
-        width: 1000px;
-        .imagen-banner {
-            width: 400px;
-            height: 400px;
-        }
-    }
-    @media (max-width: 1100px) {
-        flex-flow: column nowrap;
-        width: 100%;
-        .titulo {
-            margin-bottom: 30px;
-        }
-        .imagen-banner {
-            width: 300px;
-            height: 300px;
-        }
-    }
-}
-header {
-    padding: 0 150px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: rgb(192, 192, 192);
-    @media (max-width: 1200px) {
-        padding: 0 50px;
-    }
-    @media (max-width: 900px) {
-        padding: 0 20px;
-    }
-}
-.brand {
-    font-family: $titulos;
-    font-size: 1.4rem;
-    color: $colorPrincipal;
-}
-nav {
-    font-family: $fuentePrincipal;
-    a {
-        color: rgb(68, 68, 68);
-        font-weight: bold;
-        margin: 10px;
-    }
-}
-.banner {
-    width: 100%;
-    justify-content: space-between;
-    background-color: #000;
-    .container {
-        display: flex;
-        align-items: center;
+@import 'normalize';
+@import 'variables';
+@import 'header';
+@import 'banner';
 
-    }
-}
-.imagen-banner {
-    height: 500px;
-    width: 500px;
-    backdrop-filter: blur(10px);
-    background-color: #c20016;
-    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
-    border-radius: 10px;
-}
-.titulo{
-    width: 500px;
-    p {
-        font-size: 1.1rem;
-        color: rgb(153, 153, 153);
-        a {
-            color: #c20016;
-        }
-    }
-}
-h1 {
-    color: #c20016;
-    font-family: $titulos;
-    font-size: 3rem;
-}
-h2 {
-    font-family: $fuentePrincipal;
-    margin-bottom: 20px;
-    color:#fff;
-}
-h3 {
-    font-family: $fuentePrincipal;
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 20px;
-    color: #c20016;
-}
-h4 {
-    font-family: $fuentePrincipal;
-    color: rgb(192, 192, 192);
-    padding: 15px;
-}
+
 .conocimientos {
     display: flex;
     justify-content: center;
@@ -237,3 +126,4 @@ h5 {
         }
     }
 }
+@import 'queries';

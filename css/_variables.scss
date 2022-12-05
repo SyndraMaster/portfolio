@@ -1,0 +1,46 @@
+$colorPrincipal: #c20016;
+$luces: #F2F2EB;
+$acento-luz: #AC8C8F;
+$acento-dark: #B3885C;
+$dark: #1A2130;
+$fuentePrincipal: 'Fira Sans', sans-serif;
+$titulos: 'Koulen', cursive;
+
+
+.container {
+        width: 1200px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 50px;
+        align-items: center;
+}
+a {
+    text-decoration: none;
+}
+h1, h3{
+    font-family: $titulos;
+}
+h2, p, h4 {
+    font-family: $fuentePrincipal;
+}
+h3 {
+    text-align: center;
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 50px;
+    color: #c20016;
+}
+h1 {
+    color: #c20016;
+    font-size: 3rem;
+}
+h2 {
+    font-family: $fuentePrincipal;
+    margin-bottom: 20px;
+    color: $luces;
+}
+h4 {
+    color: $luces;
+    padding: 15px;
+}
