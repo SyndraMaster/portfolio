@@ -19,6 +19,9 @@
         width: 300px;
         height: 300px;
     }
+    .proyecto {
+        margin-bottom: 20px;
+    }
 }
 @media (max-width: 1200px) {
     header {
@@ -28,5 +31,38 @@
 @media (max-width: 900px) {
     header {
         padding: 5px 20px;
+    }
+}
+@media (max-width:600px) {
+    .banner {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .titulo {
+        width:100%;
+        padding: 5px;
+    }
+    footer {
+        display: flex;
+        flex-flow: column;
+        height: 200px;
+    }
+    .container-conocimientos {
+        width: 100%;
+        padding: 5px;
+    }
+    .conocimientos-resumen {
+        width: 100%;
+    }
+}
+@media (max-width:470px) {
+    .tec-resumen {
+        width: 100%;
+    }
+    .correo {
+        a {
+            font-size: 1rem;
+        }
     }
 }
