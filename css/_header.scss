@@ -10,6 +10,19 @@ header {
         color: $colorPrincipal;
     }
     nav {
+        display: block;
+    }
+    .normalNav {
+        font-family: $fuentePrincipal;
+        a {
+            color: $dark;
+            font-weight: bold;
+            margin: 10px;
+        }
+    }
+    .responsiveNav {
+        display: none;
+        flex-flow: column nowrap;
         font-family: $fuentePrincipal;
         a {
             color: $dark;

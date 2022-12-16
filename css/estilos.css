@@ -290,10 +290,29 @@ header .brand {
 }
 
 header nav {
+  display: block;
+}
+
+header .normalNav {
   font-family: "Fira Sans", sans-serif;
 }
 
-header nav a {
+header .normalNav a {
+  color: #1A2130;
+  font-weight: bold;
+  margin: 10px;
+}
+
+header .responsiveNav {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  font-family: "Fira Sans", sans-serif;
+}
+
+header .responsiveNav a {
   color: #1A2130;
   font-weight: bold;
   margin: 10px;
@@ -573,6 +592,21 @@ footer {
   }
   .conocimientos-resumen {
     width: 100%;
+  }
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+  }
+  nav.normalNav {
+    display: none;
+  }
+  nav.responsiveNav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
   }
 }
 
