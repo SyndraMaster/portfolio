@@ -1,14 +1,17 @@
 .proyecto {
     width: 250px;
     height: 300px;
-    border-radius: 10px;
+    // border-radius: 10px;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    border: 2px solid #fff;
+    box-shadow: 0 0 5px 3px rgba($color: $luces, $alpha: 0.5);
     cursor: pointer;
-    background-color: $acento-dark;
+    background-color: $dark;
+    transition: 0.5s ease;
     img {
         width: 100%;
         height: 130px;
@@ -16,5 +19,9 @@
     p {
         color: #fff;
         text-align: center;
+    }
+    &:hover {
+        box-shadow: 0 0 15px 10px rgba($color: $luces, $alpha: 0.5);
+        transform: scale(1.1);
     }
 }

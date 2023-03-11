@@ -1,9 +1,12 @@
 .proyectos {
-    background-color: $dark;
+    background-color: $colorPrincipal;
     padding-bottom: 30px;
     .container {
         display: flex;
         justify-content: space-between;
+    }
+    h3 {
+        color: $dark;
     }
 }
 

@@ -31,15 +31,33 @@
     justify-content: space-around;
     padding: 5px;
     border: 2px solid #fff;
-    box-shadow: 0 0 20px 5px rgba($color: $colorPrincipal, $alpha: 1.0);
-
+    box-shadow: 0 0 20px 5px rgba($color: $colorPrincipal, $alpha: 0.5);
+    animation: 8s sombra ease infinite;
+    
     // border-radius: 10px;
     background: linear-gradient(to bottom, $dark, $colorPrincipal);
     img {
         width: 80px;
         margin: 17px;
+        &:hover {
+            filter: drop-shadow(0 0 10px $colorPrincipal);
+        }
     }
 }
 #logo {
     fill: $luces;
+}
+@keyframes sombra {
+    0% {
+        box-shadow: 0 0 20px 5px rgba($color: $colorPrincipal, $alpha: 0.5);
+        
+    }
+    50% {
+        box-shadow: 0 0 20px 5px rgba($color: $luces, $alpha: 0.5);
+        
+    }
+    100% {
+        box-shadow: 0 0 20px 5px rgba($color: $colorPrincipal, $alpha: 0.5);
+
+    }
 }
