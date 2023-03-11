@@ -3,7 +3,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $luces;
+    background-color: $dark;
     .brand {
         font-family: $titulos;
         font-size: 1.4rem;
@@ -15,7 +15,7 @@ header {
     .normalNav {
         font-family: $fuentePrincipal;
         a {
-            color: $dark;
+            color: $luces;
             font-weight: bold;
             margin: 10px;
         }
