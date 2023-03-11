@@ -1,8 +1,8 @@
-$colorPrincipal: #c20016;
+$colorPrincipal: #DE4C51;
 $luces: #F2F2EB;
 $acento-luz: #AC8C8F;
 $acento-dark: #B3885C;
-$dark: #1A2130;
+$dark: #312D39;
 $fuentePrincipal: 'Fira Sans', sans-serif;
 $titulos: 'Koulen', cursive;
 .container {
@@ -23,7 +23,7 @@ h2, p, h4 {
     font-family: $fuentePrincipal;
 }
 h1 {
-    color: #c20016;
+    color: #fff;
     font-size: 3rem;
 }
 h2 {
@@ -36,7 +36,7 @@ h3 {
     margin: 0;
     font-size: 1.5rem;
     padding: 50px;
-    color: #c20016;
+    color: $colorPrincipal;
 }
 h4 {
     color: $luces;
