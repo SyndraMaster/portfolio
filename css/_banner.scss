@@ -20,7 +20,7 @@
         font-size: 1.1rem;
         color: $luces;
         a {
-            color: $acento-dark;
+            color: $colorPrincipal;
             font-weight: bold;
         }
     }
@@ -36,7 +36,6 @@
     width: 450px;
     backdrop-filter: blur(10px);
     background-color: $dark;
-    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.459);
     // border-radius: 10px;
     display: flex;
     justify-content: center;
@@ -58,7 +57,7 @@
         box-shadow: 0 0 10px 5px $colorPrincipal;
         // box-sizing: border-box;
         &:nth-child(1) {
-            animation: particle1 10s linear  infinite;
+            animation: particle1 20s linear  infinite;
             top: 110%;
             right: 5%;
             background-color: $colorPrincipal;
@@ -69,14 +68,40 @@
             border: 1px solid #fff;
             left: -10%;
             background-color: $dark;
-            animation: particle2 10s linear  infinite;
-            // animation-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            animation: particle2 20s linear  infinite;
         }
-
+        &:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: -10%;
+            border: 1px solid #fff;
+            left: 30%;
+            background-color: $dark;
+            animation: particle3 20s linear  infinite;
+        }
+        &:nth-child(4) {
+            width: 30px;
+            height: 30px;
+            top: 110%;
+            border: 1px solid #fff;
+            left: 30%;
+            background-color: $dark;
+            animation: particle4 20s linear  infinite;
+        }
+        &:nth-child(5) {
+            width: 400px;
+            height: 400px;
+            border: 1px solid #fff;
+            bottom: -100px;
+            right: -10%;
+            background-color: $dark;
+            animation: particle5 20s linear  infinite;
+        }
     }
 }
 @keyframes particle1 {
     0% {
+        box-shadow: 0 0 10px 5px $colorPrincipal;
         top: 110%;
         opacity: 0.3;
     }
@@ -86,13 +111,14 @@
     }
 
     60% {
+        
         top: 60%;
         opacity: 1;
     }
-
+    
     90% {
+        box-shadow: 0 0 10px 5px $dark;
         opacity: 1;
-        // transform: rotate(370deg) scale(1.5);
     }
     100% {
         top: -10%;
@@ -102,11 +128,9 @@
     }
 }
 @keyframes particle2 {
-
     0% {
         top: 110%;
         opacity: 0.2;
-        // transform: rotate(0deg);
     }
     50% {
         top: 110%;
@@ -114,23 +138,233 @@
         transform: rotate(0deg);
         left: -10%;
     }
-
+    
     75% {
         top: 50%;
         opacity: 1;
         transform: rotate(180deg);
     }
-
-    // 70% {
-    //     transform: scale(4) rotate(350deg);
-    //     top: -10%;
-    //     opacity: 1;
-    //     left: 70%;
-    // }
     100% {
         transform: scale(4) rotate(350deg);
         top: -10%;
         opacity: 0.2;
         left: 70%;
+    }
+}
+@keyframes particle3 {
+    0% {
+        top: -10%;
+        opacity: 0.2;
+        transform: rotate(0deg);
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    50% {
+        transform: scale(4) rotate(180deg);
+        opacity: 0.2;
+        left: 80%;
+        background-color: $colorPrincipal;
+        top: 120%;
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4) rotate(180deg);
+        opacity: 0.2;
+        left: 80%;
+        top: 120%;
+
+    }
+}
+@keyframes particle4 {
+    0% {
+        top: 110%;
+        left: 30%;
+        opacity: 0.2;
+        // transform: rotate(0deg);
+        transform: rotate(0deg); 
+
+    }
+    10% {
+        top: 110%;
+        left: 30%;
+        opacity: 0.2;
+        transform: rotate(0deg);
+        background-color: $colorPrincipal;
+    }
+    20% {
+        transform: scale(2) rotate(-180deg); 
+        opacity: 0.8;
+        left: 80%;
+        top: -20%;
+        background-color: $dark;
+    }
+    100% {
+        transform: scale(2) rotate(180deg); 
+        opacity: 0.2;
+        left: 60%;
+        top: -10%;
+
+    }
+}
+@keyframes particle5 {
+    0% {
+        bottom: -400px;
+        right: -400px;
+        opacity: 0.2;
+        transform: rotate(0);
+    }
+    10% {
+        opacity: 0.2;
+        background-color: $colorPrincipal;
+        box-shadow: 0 0 10px 5px $luces;
+        // transform: scale(2);
+        transform: scale(1) rotate(9deg);
+        // transform: ;
+    }
+    11% {
+        transform: scale(1.2) rotate(10deg);
+        opacity: 0.5;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    13% {
+        transform: scale(1) rotate(12deg);
+        opacity: 0.2;
+        background-color: $colorPrincipal;
+        box-shadow: 0 0 10px 5px $luces;
+    }
+    14% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(13deg);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    15% {
+        transform: scale(1) rotate(15%);
+        opacity: 0.2;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    30% {
+        opacity: 0.5;
+        background-color: $dark;
+        transform: scale(1) rotate(30deg);
+    }
+    31% {
+        transform: scale(1.2) rotate(31deg);
+        opacity: 0.5;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    33% {
+        transform: scale(1) rotate(33deg);
+        opacity: 0.2;
+        background-color: $colorPrincipal;
+        box-shadow: 0 0 10px 5px $luces;
+    }
+    34% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(34deg);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    35% {
+        transform: scale(1) rotate(35deg);
+        opacity: 0.2;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    50% {
+        transform: scale(1) rotate(50deg);
+        opacity: 0.5;
+        background-color: $dark;
+    }
+    51% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(51deg);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    53% {
+        transform: scale(1) rotate(53deg);
+        opacity: 0.2;
+        background-color: $colorPrincipal;
+        box-shadow: 0 0 10px 5px $luces;
+    }
+    54% {
+        transform: scale(1.2) rotate(54deg);
+        opacity: 0.5;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    55% {
+        opacity: 0.2;
+        transform: scale(1) rotate(55deg);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    70% {
+        opacity: 0.8;
+        transform: scale(1) rotate(70deg);
+        background-color: $dark;
+    }
+    71% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(71deg);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    73% {
+        transform: scale(1) rotate(73deg);
+        opacity: 0.2;
+        background-color: $colorPrincipal;
+        box-shadow: 0 0 10px 5px $luces;
+    }
+    74% {
+        opacity: 0.5;
+        transform: scale(1.2) rotate(74deg);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    75% {
+        transform: scale(1) rotate(75deg);
+        opacity: 0.2;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    90% {
+        opacity: 0.5;
+        transform: scale(1) rotate(90deg);
+        background-color: $dark;
+    }
+    91% {
+        opacity: 0.5;
+        transform: scale(1.2);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    93% {
+        opacity: 0.2;
+        transform: scale(1);
+        background-color: $colorPrincipal;
+        box-shadow: 0 0 10px 5px $luces;
+    }
+    94% {
+        opacity: 0.5;
+        transform: scale(1.2);
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+    95% {
+        transform: scale(1.2);
+        opacity: 0.2;
+        background-color: $dark;
+        box-shadow: 0 0 10px 5px $dark;
+    }
+
+    100% {
+        bottom: 120%;
+        right: 120%;
+        transform: rotate(356deg); 
+        opacity: 0.5;
     }
 }
