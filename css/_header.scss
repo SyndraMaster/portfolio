@@ -4,6 +4,12 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: $dark;
+    flex-flow: row wrap;
+    position: fixed;
+    width: 100%;
+    z-index: 12;
+    box-sizing: border-box;
+    overflow: hidden;
     .brand {
         font-family: $titulos;
         font-size: 1.4rem;
@@ -11,8 +17,6 @@ header {
     }
     nav {
         display: block;
-    }
-    .normalNav {
         font-family: $fuentePrincipal;
         a {
             color: $luces;
@@ -20,14 +24,29 @@ header {
             margin: 10px;
         }
     }
+    
     .responsiveNav {
         display: none;
         flex-flow: column nowrap;
-        font-family: $fuentePrincipal;
-        a {
-            color: $dark;
-            font-weight: bold;
-            margin: 10px;
+        width: 100%;
+        top: 36px;
+        left: 100%;
+        z-index: 9;
+        position: fixed;
+        background-color: $dark;
+        align-items: center;
+        transition: 1s ease;
+        box-shadow: 0 10px 10px -8px $colorPrincipal;
+        &.active {
+            left: 0;
         }
     }
+}
+.menu-hamburguesa {
+    img {
+        width: 20px;
+        padding: 3px;
+        border: 1px solid $colorPrincipal;
+    }
+    display: none;
 }

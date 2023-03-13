@@ -59,15 +59,16 @@
     .conocimientos-resumen {
         width: 100%;
     }
-    header {
-        flex-flow: column nowrap;
-    }
     nav.normalNav {
         display: none;
     }
     nav.responsiveNav {
         display: flex;
         text-align: center;
+        width: 100%;
+    }
+    .menu-hamburguesa {
+        display: block;
     }
 }
 @media (max-width:470px) {
