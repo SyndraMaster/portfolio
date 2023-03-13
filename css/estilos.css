@@ -1443,5 +1443,9 @@ footer {
   .correo a {
     font-size: 1rem;
   }
+  .imagen-banner {
+    width: 100%;
+    overflow: hidden;
+  }
 }
 /*# sourceMappingURL=estilos.css.map */
