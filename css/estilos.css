@@ -1270,42 +1270,6 @@ header .responsiveNav.active {
           align-items: center;
 }
 
-.card-modal {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  bottom: -100px;
-  height: 100px;
-  width: 100%;
-  background-color: #DE4C51;
-  -webkit-transition: -webkit-transform  0.5s ease;
-  transition: -webkit-transform  0.5s ease;
-  transition: transform  0.5s ease;
-  transition: transform  0.5s ease, -webkit-transform  0.5s ease;
-}
-
-.card-modal a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5px 5px;
-  border: 1px solid red;
-}
-
 .proyecto {
   width: 250px;
   height: 300px;
@@ -1328,7 +1292,6 @@ header .responsiveNav.active {
   border: 2px solid #fff;
   -webkit-box-shadow: 0 0 5px 3px rgba(242, 242, 235, 0.5);
           box-shadow: 0 0 5px 3px rgba(242, 242, 235, 0.5);
-  cursor: pointer;
   background-color: #312D39;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
@@ -1361,7 +1324,45 @@ header .responsiveNav.active {
 .proyecto .card-modal img {
   height: 20px;
   margin-right: 5px;
-  padding-bottom: 2px;
+}
+
+.card-modal {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  bottom: -100px;
+  height: 100px;
+  width: 100%;
+  background-color: #DE4C51;
+  -webkit-transition: -webkit-transform  0.5s ease;
+  transition: -webkit-transform  0.5s ease;
+  transition: transform  0.5s ease;
+  transition: transform  0.5s ease, -webkit-transform  0.5s ease;
+}
+
+.card-modal a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #312D39;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 15px;
+  border: 2px solid #fff;
+  color: #F2F2EB;
+  font-weight: bold;
 }
 
 footer {
